@@ -1,0 +1,38 @@
+ul,li{
+  list-style: none;
+}
+button{
+  border: none;
+  outline: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.ableclick{
+  cursor: pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* iPhone X系列底部按钮适配 */
+.jr-x-fixed-bottom-bar{
+  padding-bottom: constant(safe-area-inset-bottom)!important;
+  padding-bottom: env(safe-area-inset-bottom)!important;
+}
+.jr-x-fixed-bottom-bar-inner{
+  bottom: constant(safe-area-inset-bottom)!important;
+  bottom: env(safe-area-inset-bottom)!important;
+}
+.jr-x-fixed-bottom-bar-inner::after{
+  position: fixed;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: constant(safe-area-inset-bottom)!important;
+  height: env(safe-area-inset-bottom)!important;
+  width: 100%;
+  z-index: 90;
+  background-color: #fff;
+}
