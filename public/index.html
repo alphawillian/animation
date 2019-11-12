@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <link rel="icon" href="//www.jd.com/favicon.ico" type="image/x-icon" />
+  <title></title>
+
+  <script src="//m.jr.jd.com/statics/WeixinApi.min.js"></script>
+  <script src="//m.jr.jd.com/crayfish/zui/bridge/1.0.7/bridge.js"></script>
+  <script src="//storage.jd.com/jrcommon/js/jdShare.js"></script>
+  <script src="//storage.jd.com/jrcommon/js/easyShare.js"></script>
+  <script src="//storage.jd.com/jrcommon/js/track.js"></script>
+  <script src="//m.jr.jd.com/mjractivity/data_source_100002466.js"></script>
+  <script>
+    ; (function () {
+      // rem换算zx
+      var resizeEvt = "orientationchange" in window ? "orientationchange" : "resize"
+      var docEl = document.documentElement
+      function resizeFn() {
+        var docW = docEl.clientWidth
+        if (docW > 750) {
+          docW = 750
+        }
+        docEl.style.fontSize = (docW * 100) / 750 + "px"
+      }
+      resizeFn()
+      window.addEventListener(resizeEvt, resizeFn)
+    })()
+  </script>
+  <script>
+    JPTrack.init({
+      biz: 'JR,FE,ETERNAL_VANISH', // biz设置必填 // url渠道参数key值默认取p_id 选填
+      client: []// 端判断扩展选填 入参为数组 内容为属性是reg和name的对象 最后端判断会返回匹配到的第一个值的name属性
+    })
+  </script>
+</head>
+
+<body>
+
+  <main id="app"></main>
+
+  <!--aks加密-->
+  <!-- <script type="text/javascript" src="https://jrsecstatic.jdpay.com/jr-sec-dev-static/cryptico.min.js"></script> -->
+
+  <!--唤起商城APP-->
+  <!-- <script type="text/javascript" src="//wq.360buyimg.com/js/common/dest/wq.imk.downloadAppPlugin.min.js"></script> -->
+
+  <!--天盾风控-->
+  <!--<script>-->
+  <!--  var bp_appid = "";-->
+  <!--  var bp_bizid = "";-->
+  <!--</script>-->
+  <!--<script src="//gia.jd.com/m.html"></script>-->
+  <!--<script src="//gias.jd.com/js/m.js"></script>-->
+  <!--生物探针加了之后浏览器里模拟手机领奖会被风控 开发时需注释-->
+  <!--<script src="//bps.jd.com/js/ts.js"></script>-->
+
+  <!--奇点埋点-->
+  <script>
+    var _qd = _qd || {};
+    _qd['module'] = '9320009';
+  </script>
+  <script src="//jrclick.jd.com/qidian.js"></script>
+
+  <!-- 判断是否是debug模式 -->
+  <script>
+    (function () {
+      if (/debug=jdpayfe/.test(window.location)) {
+        let script = document.createElement('script');
+        script.src = "//cdn.jsdelivr.net/npm/eruda";
+        document.body.appendChild(script);
+        script.onload = function () {
+          eruda.init();
+        }
+      }
+    })();
+  </script>
+</body>
+
+</html>
