@@ -76,12 +76,18 @@ export default {
 
 <style lang='scss' scoped>
 $r: 100;
+.animation-container{
+  margin-bottom: 40px;
+  background-color: #ededed;
+  border-radius: 8rem/$r;
+}
 .code-container{
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
   .name{
-    padding-left: 2em;
+    font-size: 12px;
+    // padding-left: 2em;
     .txt{
       font-size: 14px;
       color: #333;
@@ -115,6 +121,9 @@ $r: 100;
   .animation-change-line{
     text-align: right;
     padding-right: 20rem/$r;
+    // height: 36px;
+    font-size: 0;
+    padding-bottom: 6px;
   }
   .animation-change{
     width: 30px;

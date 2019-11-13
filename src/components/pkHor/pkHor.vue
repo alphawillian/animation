@@ -175,13 +175,6 @@ export default {
 
 <style lang='scss' scoped>
 $r: 100;
-textarea{
-  margin-top: 4px;
-  background-color: #23241f;
-  border-radius: 4px;
-  color: #66d9ef;
-  width: 100%;
-}
 .match-block{
   width: 660rem/$r;
   background: white;

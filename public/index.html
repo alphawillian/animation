@@ -17,12 +17,12 @@
   <link rel="icon" href="//www.jd.com/favicon.ico" type="image/x-icon" />
   <title></title>
 
-  <script src="//m.jr.jd.com/statics/WeixinApi.min.js"></script>
+  <!-- <script src="//m.jr.jd.com/statics/WeixinApi.min.js"></script>
   <script src="//m.jr.jd.com/crayfish/zui/bridge/1.0.7/bridge.js"></script>
   <script src="//storage.jd.com/jrcommon/js/jdShare.js"></script>
   <script src="//storage.jd.com/jrcommon/js/easyShare.js"></script>
   <script src="//storage.jd.com/jrcommon/js/track.js"></script>
-  <script src="//m.jr.jd.com/mjractivity/data_source_100002466.js"></script>
+  <script src="//m.jr.jd.com/mjractivity/data_source_100002466.js"></script> -->
   <script>
     ; (function () {
       // rem换算zx
@@ -39,17 +39,21 @@
       window.addEventListener(resizeEvt, resizeFn)
     })()
   </script>
-  <script>
-    JPTrack.init({
-      biz: 'JR,FE,ETERNAL_VANISH', // biz设置必填 // url渠道参数key值默认取p_id 选填
-      client: []// 端判断扩展选填 入参为数组 内容为属性是reg和name的对象 最后端判断会返回匹配到的第一个值的name属性
-    })
-  </script>
 </head>
 
 <body>
 
   <main id="app"></main>
+  <!--唤起商城APP-->
+
+  <!-- zepto 因为唤起商城app和动画js不兼容 需先引zepto-->
+  <script src="https://storage.jd.com/jrcommon/js/zepto.min.js"></script>
+
+  <!-- 动画 -->
+  <script src="https://storage.jd.com/jrcommon/js/TweenMax.min.js"></script>
+  <script src="//storage.jd.com/jrcommon/js/TweenMax.SplitText.min.js"></script>
+
+  <!-- <script type="text/javascript" src="//wq.360buyimg.com/js/common/dest/wq.imk.downloadAppPlugin.min.js"></script> -->
 
   <!--aks加密-->
   <!-- <script type="text/javascript" src="https://jrsecstatic.jdpay.com/jr-sec-dev-static/cryptico.min.js"></script> -->

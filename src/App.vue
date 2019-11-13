@@ -3,6 +3,10 @@
     <DogFight></DogFight>
     <PkVer></PkVer>
     <PkHor></PkHor>
+    <CarFan></CarFan>
+    <Rocket></Rocket>
+    <LittleItem></LittleItem>
+    <TextStyle></TextStyle>
   </main>
 </template>
 
@@ -11,11 +15,19 @@
 import DogFight from './components/dogFight/dogFight'
 import PkVer from './components/pkVer/pkVer'
 import PkHor from './components/pkHor/pkHor'
+import CarFan from './components/carFan/carFan'
+import Rocket from './components/rocket/rocket'
+import LittleItem from './components/littleItem/littleItem'
+import Text from './components/text/text'
 export default {
   components: {
     DogFight,
     PkVer,
-    PkHor
+    PkHor,
+    CarFan,
+    Rocket,
+    LittleItem,
+    TextStyle: Text
   },
   data () {
     return {
@@ -41,8 +53,6 @@ $r:100;
   width: 7.5rem;
   max-width: 100vh;
   min-height: 100vh;
-  background-color: #ededed;
-  
+  background-color: #ddd;
 }
-
 </style>

@@ -9,7 +9,6 @@ button{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 12px;
 }
 .ableclick{
   cursor: pointer;
@@ -35,4 +34,12 @@ button{
   width: 100%;
   z-index: 90;
   background-color: #fff;
+}
+textarea{
+  margin-top: 4px;
+  background-color: #23241f;
+  border-radius: 4px;
+  color: #66d9ef;
+  width: 100%;
+  font-size: 14px;
 }
